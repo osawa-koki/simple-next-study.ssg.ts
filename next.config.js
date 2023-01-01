@@ -5,6 +5,9 @@ const SUB_DIRECTORY = "/simple-next-study.ssg.ts";
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
-  // 本番環境では SUB_DIRECTORY それ以外は空欄
-  assetPrefix: isProd ? '' : "",
+  basePath: isProd ? SUB_DIRECTORY : "",
+  assetPrefix: isProd ? SUB_DIRECTORY : "",
+  publicRuntimeConfig: {
+    basePath: isProd ? SUB_DIRECTORY : "",
+  },
 };
