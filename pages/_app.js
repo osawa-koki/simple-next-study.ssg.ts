@@ -6,7 +6,7 @@ import '../styles/index.scss';
 import '../styles/about.scss';
 import '../styles/contact.scss';
 
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -19,5 +19,5 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
     </>
-  )
-}
+  );
+};
