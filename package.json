@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build && next export -o docs",
+    "dev": "yarn develop",
+    "develop": "next",
+    "build": "next build && next export -o ./dist",
     "start": "next start",
     "type-check": "tsc"
   },
