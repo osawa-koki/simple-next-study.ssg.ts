@@ -8,8 +8,6 @@ import '../styles/contact.scss';
 
 import Head from 'next/head';
 
-import setting from '../setting';
-
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -17,8 +15,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <title>💓 Simple Next Study 💓</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <base href={setting.basePath} />
-        <link rel="icon" type="image/png" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/simple-next-study.ssg.ts/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>
