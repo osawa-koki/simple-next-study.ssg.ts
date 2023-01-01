@@ -9,6 +9,8 @@ export default function HelloWorld() {
         <ul>
           <li><a href="https://nextjs.org/learn/basics/create-nextjs-app">Next.js公式チュートリアル</a></li>
           <li><a href="https://react-bootstrap.github.io/">React Bootstrap公式ドキュメント</a></li>
+          <li><a href="https://www.typescriptlang.org/docs/">TypeScript公式ドキュメント</a></li>
+          <li><a href="https://typescriptbook.jp/">サバイバルTypeScript</a></li>
         </ul>
         <hr />
         <PageBlock />
