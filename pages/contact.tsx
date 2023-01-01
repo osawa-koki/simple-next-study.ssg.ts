@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
-import Form from 'react-bootstrap/Form';
+import { Button, Alert, Form } from 'react-bootstrap';
 
 import PageBlock from "../components/pages";
 
@@ -26,7 +24,7 @@ export default function HelloWorld() {
         <hr />
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" value={mail} onInput={(e) => {setMail(e.target.value)}} />
+          <Form.Control type="email" placeholder="Enter email" value={mail} onInput={(e) => {setMail((e.target as HTMLInputElement).value)}} />
           <Form.Text>
             We'll never share your email with anyone else.
           </Form.Text>
