@@ -6,5 +6,5 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   // 本番環境では SUB_DIRECTORY それ以外は空欄
-  assetPrefix: isProd ? SUB_DIRECTORY : "",
+  assetPrefix: isProd ? '' : "",
 };
